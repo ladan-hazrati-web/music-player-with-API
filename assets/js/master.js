@@ -161,6 +161,8 @@ function formatedTime(time) {
 function endHandler() {
   const audio = document.querySelector("#audio");
   const playBtn = document.querySelector("#play-btn");
+  const coverMusic = document.querySelector(".cover-music>img");
   playBtn.firstElementChild.classList.replace("fa-pause", "fa-play");
+  coverMusic.classList.remove("animation-rotate");
   isPlaying = false;
 }
